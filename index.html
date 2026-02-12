@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Web Development | 48-Hour Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            950: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="zap" class="w-6 h-6 text-indigo-400"></i>
+                    <span class="text-xl font-bold text-white">DevAI</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#process" class="text-slate-300 hover:text-indigo-400 transition-colors">My Process</a>
+                    <a href="#work" class="text-slate-300 hover:text-indigo-400 transition-colors">Work</a>
+                    <a href="#services" class="text-slate-300 hover:text-indigo-400 transition-colors">Services</a>
+                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg transition-colors font-medium">
+                        Hire Me
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-300">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#process" class="text-slate-300 hover:text-indigo-400 transition-colors">My Process</a>
+                    <a href="#work" class="text-slate-300 hover:text-indigo-400 transition-colors">Work</a>
+                    <a href="#services" class="text-slate-300 hover:text-indigo-400 transition-colors">Services</a>
+                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg transition-colors font-medium text-center">
+                        Hire Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-4xl">
+                <div class="flex items-center space-x-2 mb-6">
+                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span class="text-slate-400 text-sm uppercase tracking-wider">Available for Projects</span>
+                </div>
+                
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                    I build <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">high-performance</span> websites in 48 hours using AI-driven development.
+                </h1>
+                
+                <p class="text-xl text-slate-400 mb-8 max-w-2xl">
+                    Leveraging cutting-edge AI tools to deliver production-ready, pixel-perfect websites at unprecedented speed—without compromising on quality.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#work" class="inline-flex items-center justify-center space-x-2 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg transition-colors font-medium text-lg">
+                        <span>View My Work</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#services" class="inline-flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg transition-colors font-medium text-lg">
+                        <span>Learn More</span>
+                        <i data-lucide="info" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Examples Grid -->
+    <section id="work" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4">Live Examples</h2>
+                <p class="text-xl text-slate-400">Real projects built with AI-powered development</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-indigo-500 transition-all hover:shadow-lg hover:shadow-indigo-500/10">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="layout-dashboard" class="w-6 h-6 text-indigo-400"></i>
+                        <h3 class="text-2xl font-bold">SaaS Dashboard</h3>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">React</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">Tailwind</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">Aider</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">TypeScript</span>
+                    </div>
+                    
+                    <p class="text-slate-400 mb-6">
+                        A fully responsive analytics dashboard with real-time data visualization, dark mode support, and seamless user experience.
+                    </p>
+                    
+                    <a href="#" class="inline-flex items-center space-x-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors">
+                        <span>View Live Demo</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-indigo-500 transition-all hover:shadow-lg hover:shadow-indigo-500/10">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="shopping-cart" class="w-6 h-6 text-indigo-400"></i>
+                        <h3 class="text-2xl font-bold">E-Commerce Store</h3>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">Next.js</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">Tailwind</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">Aider</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">Stripe</span>
+                    </div>
+                    
+                    <p class="text-slate-400 mb-6">
+                        Modern e-commerce platform with product filtering, cart management, and secure checkout integration built in record time.
+                    </p>
+                    
+                    <a href="#" class="inline-flex items-center space-x-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors">
+                        <span>View Live Demo</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-indigo-500 transition-all hover:shadow-lg hover:shadow-indigo-500/10">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="briefcase" class="w-6 h-6 text-indigo-400"></i>
+                        <h3 class="text-2xl font-bold">Portfolio Site</h3>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">Tailwind</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">Aider</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">Alpine.js</span>
+                    </div>
+                    
+                    <p class="text-slate-400 mb-6">
+                        Clean, professional portfolio showcasing creative work with smooth animations, contact forms, and optimized performance.
+                    </p>
+                    
+                    <a href="#" class="inline-flex items-center space-x-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors">
+                        <span>View Live Demo</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why AI Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6">Why AI-Driven Development?</h2>
+                <p class="text-xl text-slate-400">
+                    I leverage Aider AI to deliver exceptional results faster and more cost-effectively than traditional development.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-xl p-8">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="code-2" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">100% Clean Code</h3>
+                    <p class="text-slate-400">
+                        Aider AI ensures every line of code follows best practices, is well-documented, and maintainable. No technical debt, no shortcuts.
+                    </p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-xl p-8">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Rapid Iteration</h3>
+                    <p class="text-slate-400">
+                        What used to take weeks now takes hours. AI-assisted development allows for instant prototyping, testing, and refinement cycles.
+                    </p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-xl p-8">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="dollar-sign" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Lower Costs</h3>
+                    <p class="text-slate-400">
+                        Faster development means lower costs for you. Get enterprise-quality websites at a fraction of traditional agency prices.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 sm:p-12 text-center">
+                <h3 class="text-3xl sm:text-4xl font-bold mb-4">Ready to build something amazing?</h3>
+                <p class="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
+                    Let's discuss your project and see how AI-driven development can transform your vision into reality.
+                </p>
+                <a href="#contact" class="inline-flex items-center space-x-2 bg-white text-indigo-600 hover:bg-slate-100 px-8 py-4 rounded-lg transition-colors font-medium text-lg">
+                    <span>Start Your Project</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Let's Work Together</h2>
+                <p class="text-xl text-slate-400">Get in touch to discuss your next project</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
+                <a href="mailto:your.email@example.com" class="flex items-center space-x-3 text-slate-300 hover:text-indigo-400 transition-colors group">
+                    <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                    </div>
+                    <span class="text-lg font-medium">your.email@example.com</span>
+                </a>
+                
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-slate-300 hover:text-indigo-400 transition-colors group">
+                    <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </div>
+                    <span class="text-lg font-medium">github.com/yourusername</span>
+                </a>
+            </div>
+            
+            <div class="text-center text-slate-500 text-sm">
+                <p>&copy; 2026 DevAI. Built with AI-powered development using Aider.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
