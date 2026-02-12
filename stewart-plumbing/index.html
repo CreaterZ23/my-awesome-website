@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stewart Family Plumbing - Fast, Reliable Plumbing You Can Trust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'royal-blue': '#1e40af',
+                        'action-orange': '#f97316',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(249, 115, 22, 0);
+            }
+        }
+        .pulse-button {
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    
+    <!-- Emergency Header -->
+    <div class="bg-action-orange text-white py-3 px-4 text-center font-bold">
+        <span class="text-sm md:text-base">🚨 24/7 Emergency Service Available</span>
+        <a href="tel:+16786651827" class="ml-4 underline hover:no-underline text-sm md:text-lg">
+            📞 +1 (678) 665-1827
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-royal-blue to-blue-900 text-white py-16 px-4 md:py-24">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                Fast, Reliable Plumbing You Can Trust
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                Serving Georgia with over 15 years of experience
+            </p>
+            <a href="tel:+16786651827" 
+               class="inline-block bg-action-orange hover:bg-orange-600 text-white font-bold py-4 px-8 md:py-5 md:px-12 rounded-lg text-lg md:text-xl transition-all pulse-button">
+                Request Service Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-12 px-4 border-b-2 border-gray-200">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="flex flex-col items-center">
+                <div class="bg-royal-blue text-white rounded-full w-16 h-16 flex items-center justify-center mb-3 text-2xl">
+                    ✓
+                </div>
+                <h3 class="font-bold text-lg text-gray-800">Licensed & Insured</h3>
+                <p class="text-gray-600 text-sm mt-1">Fully certified professionals</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="bg-royal-blue text-white rounded-full w-16 h-16 flex items-center justify-center mb-3 text-2xl">
+                    💲
+                </div>
+                <h3 class="font-bold text-lg text-gray-800">Upfront Pricing</h3>
+                <p class="text-gray-600 text-sm mt-1">No hidden fees or surprises</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="bg-royal-blue text-white rounded-full w-16 h-16 flex items-center justify-center mb-3 text-2xl">
+                    ⚡
+                </div>
+                <h3 class="font-bold text-lg text-gray-800">Same Day Service</h3>
+                <p class="text-gray-600 text-sm mt-1">Fast response when you need it</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="bg-gray-50 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+                Our Services
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Drain Cleaning -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+                    <div class="text-4xl mb-4">🚿</div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Drain Cleaning</h3>
+                    <p class="text-gray-600 text-sm">
+                        Professional drain clearing and maintenance to keep water flowing smoothly.
+                    </p>
+                </div>
+                <!-- Water Heaters -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+                    <div class="text-4xl mb-4">🔥</div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Water Heaters</h3>
+                    <p class="text-gray-600 text-sm">
+                        Installation, repair, and replacement of all water heater types.
+                    </p>
+                </div>
+                <!-- Leaking Pipes -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+                    <div class="text-4xl mb-4">💧</div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Leaking Pipes</h3>
+                    <p class="text-gray-600 text-sm">
+                        Quick detection and repair of leaks to prevent water damage.
+                    </p>
+                </div>
+                <!-- Emergency Repairs -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+                    <div class="text-4xl mb-4">🚨</div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Emergency Repairs</h3>
+                    <p class="text-gray-600 text-sm">
+                        24/7 emergency service for urgent plumbing problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="bg-white py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+                What Our Customers Say
+            </h2>
+            <div class="bg-gray-50 rounded-lg shadow-lg p-8 md:p-12">
+                <div class="flex justify-center mb-4">
+                    <span class="text-yellow-400 text-3xl">⭐⭐⭐⭐⭐</span>
+                </div>
+                <p class="text-gray-700 text-lg md:text-xl italic text-center mb-6">
+                    "Stewart Family Plumbing saved the day! Our water heater broke on a Sunday morning and they had someone here within 2 hours. Professional, courteous, and the price was exactly what they quoted. Highly recommend!"
+                </p>
+                <p class="text-gray-600 font-semibold text-center">
+                    — Jennifer M., Atlanta, GA
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer class="bg-royal-blue text-white py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-6">Stewart Family Plumbing</h3>
+            <div class="mb-6">
+                <p class="text-lg mb-2">📍 Serving Metro Atlanta & Surrounding Areas</p>
+                <p class="text-lg mb-4">📞 <a href="tel:+16786651827" class="hover:underline">+1 (678) 665-1827</a></p>
+            </div>
+            <div class="border-t border-blue-700 pt-6">
+                <h4 class="font-bold text-lg mb-3">Business Hours</h4>
+                <p class="text-blue-100">Monday - Friday: 7:00 AM - 7:00 PM</p>
+                <p class="text-blue-100">Saturday: 8:00 AM - 5:00 PM</p>
+                <p class="text-blue-100">Sunday: Emergency Service Only</p>
+                <p class="text-yellow-300 font-semibold mt-3">24/7 Emergency Service Available</p>
+            </div>
+            <div class="mt-8 text-sm text-blue-200">
+                <p>&copy; 2026 Stewart Family Plumbing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
